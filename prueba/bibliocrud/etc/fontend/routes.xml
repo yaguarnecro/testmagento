@@ -6,8 +6,8 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
-        <route id="prueba" frontName="test">
-            <module name="Learning_HelloPage" />
+        <route id="prueba" frontName="bibliocrud">
+            <module name="prueba_bibliocrud" />
         </route>
     </router>
 </config>
