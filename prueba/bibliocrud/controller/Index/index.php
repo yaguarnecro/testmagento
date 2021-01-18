@@ -1,21 +1,15 @@
 <?php 
 namespace prueba\bibliocrud\Controller\Index;
-class Index extends \Magento\Framework\App\Action\Action
-{
-    protected $_pageFactory;
 
-    public function __construct(
-       \Magento\Framework\App\Action\Context $context,
-       \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory)
-{
-       $this->_pageFactory = $pageFactory;
-       return parent::_construct($context);
-}
+use Magento\Framework\App\Action\Action;
+use Magento\Framework\Controller\ResultFactory;
 
-    public function execute()
+
+class Index extends Action
+{
+    public function excecute()
     {
-       echo "Hellow world";
-       // return $this->_pageFactory->create();
-       // exit;
-    } 
+        $page = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
+        return $page;
+    }
 }
