@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+layout="1column" 
+xsi:noNamespaceSchemaLocation=
+"urn:magento:frameworkview/layout/etc/page_configuration.xsd">
+
+ <referenceContainer name="Content"> 
+
+  <block class="prueba/bibliocrud/block/index"
+  name="bibliocrud_index_index" 
+  template="prueba_bibliocrud::index.phtml" />
+
+ </referenceContainer>
+
+</page>
