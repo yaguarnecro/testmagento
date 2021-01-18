@@ -16,6 +16,6 @@ class Index extends \Magento\Framework\App\Action\Action
     {
        echo "Hellow world";
        // return $this->_pageFactory->create();
-       exit;
+       // exit;
     } 
 }
