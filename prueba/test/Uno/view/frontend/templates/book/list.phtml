@@ -1,0 +1,9 @@
+<?php /** @var test\Uno\Block\Books $block */ ?>
+<h1>Test Books</h1>
+<?php foreach($block->getBooks() as $book): ?>
+    <?php /** @var test\Uno\Model\Book */ ?>
+    <h2><a href="<?php echo $block->getBookUrl($book);?>">
+    <?php echo $book->getTitle(); ?></a>
+    </h2>
+    <p><?php echo $book ->getContent(); ?></p>
+<?php endforeach; ?>
