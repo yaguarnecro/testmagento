@@ -39,7 +39,7 @@ class InstallSchema implements InstallSchemaInterface
                         'nullable' => false,
                         'primary' => true
                     ],
-                    'ID'
+                    'BookId'
                 )
                 ->addColumn(
                     'autor',
@@ -78,7 +78,7 @@ class InstallSchema implements InstallSchemaInterface
                 )
                 ->addColumn(
                     'unidadesDispo',
-                    Table::TYPE_INT,
+                    Table::TYPE_INTEGER,
                     null,
                     ['nullable' => false],
                     'UnidadesDipso'
